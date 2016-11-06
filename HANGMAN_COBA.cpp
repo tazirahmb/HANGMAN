@@ -20,6 +20,7 @@ void delay(void)
         i++;
     }
 }
+
 int main()
 {
     SetConsoleTitle("HANGMAN"); //buat ganti nama title
