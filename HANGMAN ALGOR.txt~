@@ -1,0 +1,30 @@
+Algoritma Game Hangman :
+1. User menjalankan Program Game Hangman
+2. Opening Game
+3. Masukkan kata-kata yang ingin ditebak (hanya huruf kecil) (di programnya akan tampil '*' di tiap huruf yang diketik), lalu tekan enter
+4. masukkan petunjuk, kemudian tekan enter.
+5. Tampil petunjuk, sisa nyawa (maksimal 6), kata yang ditebak, huruf yang belum, huruf yang sudah digunakan, dan gambar hangmannya.
+6. Ketikkan 1 huruf
+ > Jika Huruf yang diketik ada di kata yang ditebak, maka huruf tersebut akan ditampilkan dan dimasukkan ke daftar huruf yang sudah digunakan
+ > Jika Huruf yang dimasukkan tidak ada di kata yang ditebak, maka nyawa berkurang 1 dan dimasukkan ke daftar huruf yang sudah digunakan
+ > jika huruf tersebut sudah digunakan, akan tampil tulisan "huruf _ sudah digunakan", dan nyawa tidak berkurang.
+7. Games selesai ketika semua huruf sudah ditebak atau nyawa habis.
+8. Tampil pilihan untuk mengulang game atau tidak.
+ > jika user menginput 'Y', maka kembali ke no. 3
+ > jika user menginput 'N', game selesai
+ > jika selain dari itu, maka akan tampi tulisan 'input salah' dan user diminta menginput lagi.
+
+Variabel
+(int) life = 6, betol, go = 0;
+(string) kata = "", petunjuk, tampil, muncul = "", used = "";
+(char) katin, inputin, lagi;
+(bool) fond, dobel, ceck;
+(const char) *x;
+
+Header
+iostream > buat cin dan cout
+cstdlib > buat system
+conio.h > buat getch
+string.h > buat fungsi string
+windows.h > buat COORD dan gotoxy
+ctype.h
